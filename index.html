@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Mark"></p>
+    <p id="John"></p>
+    <script>
+      // let m= 20;
+      // let h= 10;
+      // let bmi= m/h**2;
+      // document.getElementById("Mark").innerHTML
+      
+      // let mb=20;
+      // let hb=20;
+      // let bmib= mb/hb**2;
+      // document.getElementById("John").innerHTML
+
+      // document.write(Boolean(0.2));
+      
+      // const $Data1=[17,21,23];
+      // const $Data2=[12,5,-5,0,4];
+      // console.log('${$Data1[0]}ºC in ${[0+1]} days...${$Data1[1]}ºC in ${[0+2]} days...');
+      // const printForecast=function($Data1)
+      // {
+      //   let res=""
+      //   for(i=0;i<$Data1.length;i++)
+      //   {
+      //     res+='${$Data[i]}ºC in ${[i+1]} days...';
+
+    
+      //   }
+      //   return res;
+      // }
+      // console.log(printForecast($Data1));
+
+      const calcAverage = (s1, s2, s3) => (s1 + s2 + s3) / 3;
+
+      let scoreDolphins = calcAverage(45, 30, 70);
+      console.log(scoreDolphins);
+      let scoreKoalas = calcAverage(60, 84, 19);
+      const checkWinner = (avgDolphins,avgKoalas)=> {
+     if(avgDolphins >=2 * avgKoalas) {
+    // console.log(`Dolphins wins ${avgDolphins} vs. ${avgKoalas}`);
+    console.log("I win");
+     } else if (avgDolphins >=2 * avgKoalas) {
+    // console.log(`Koalas wins ${avgKoalas} vs ${avgDolphins}`);
+    console.log("You win");
+     }
+     else{
+      console.log("millions");
+     }
+     };
+     console.log(checkWinner(scoreDolphins, scoreKoalas));
+     
+     
+
+      
+
+
+
+     
+    
+     
+
+    </script>
+</body>
+</html>

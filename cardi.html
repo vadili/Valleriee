@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         const calcAverage = (s1, s2, s3) => (s1 + s2 + s3) / 3;
+
+// let scoreDolphins = calcAverage(45, 30, 70);
+// console.log(scoreDolphins);
+// let scoreKoalas = calcAverage(60, 84, 19);
+// const checkWinner = (avgDolphins,avgKoalas)=> {
+// if(avgDolphins >=2 * avgKoalas) {
+// // console.log(`Dolphins wins ${avgDolphins} vs. ${avgKoalas}`);
+// console.log("I win");
+// } else if (avgDolphins >=2 * avgKoalas) {
+// // console.log(`Koalas wins ${avgKoalas} vs ${avgDolphins}`);
+// console.log("You win");
+// }
+// else{
+// console.log("millions");
+// }
+// };
+// console.log(checkWinner(scoreDolphins, scoreKoalas));
+let calcAverage =(a,b,c)=>{
+            let avgNum= (a + b + c)/3;
+            return avgNum;
+        }
+        // scoredolphins 44 23 71
+        //scoreKaoola 65 54 49
+
+        let scoredolphins =calcAverage(44,23,71);
+        let scoreKaoola =calcAverage(65,54,49);
+        console.log(scoredolphins,scoreKaoola);
+
+
+//Check winners
+const checkWinner=(avgDolphins,avgKoalas)=>{
+  
+  if(avgDolphins >=2 * avgKoalas){
+    console.log(`Dolphin win (${avgDolphins} vs .${avgKoalas})`);
+  }else if(avgKoalas >=2 * avgDolphins){
+    console.log(`Koalas  win (${avgKoalas} vs .${avgDolphins})`);
+}else{
+    console.log('No team wins')
+}
+}
+
+    // const Winnwr=checkWinner(avgDolphins,avgKoalas);
+    let Winnwr=checkWinner(scoredolphins,scoreKaoola);
+    console.log(Winnwr);
+
+    //Test 2
+    let scoreDolphins =calcAverage(85,54,41);
+    let Koalas= calcAverage(23,34,27);
+    console.log(scoreDolphins,Koalas);
+    console.log(checkWinner(scoreDolphins,Koalas));
+    </script>
+</body>
+</html>
